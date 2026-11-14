@@ -1,0 +1,385 @@
+<div align="center">
+
+<img src="assets/ic_launcher-playstore.png" alt="YuruTune app icon" width="160" />
+
+<br/>
+<br/>
+
+<img src="assets/yurutune-banner.png" alt="YuruTune - your cozy music space" width="420" />
+
+# YuruTune
+
+### Your cozy music space: a YouTube Music client for Android
+
+<br/>
+
+[![License](https://img.shields.io/github/license/MetrolistGroup/metrolist?style=for-the-badge&labelColor=0d1117)](LICENSE)
+[![Based on Metrolist](https://img.shields.io/badge/Based%20on-Metrolist-8b5cf6?style=for-the-badge&labelColor=0d1117)](https://github.com/MetrolistGroup/Metrolist)
+
+<br/>
+
+[**Download**](#download-now) · [**Features**](#features) · [**Translate**](#translations) · [**FAQ**](#faq) · [**Support**](#support-the-project) · [**License**](#license)
+
+</div>
+
+> [!IMPORTANT]
+> # Credits & Thanks
+> **YuruTune is a lightweight rebrand of [Metrolist](https://github.com/MetrolistGroup/Metrolist)**, created by **[Mo Agamy](https://github.com/mostafaalagamy)** and the **[MetrolistGroup](https://github.com/MetrolistGroup)** contributors.  
+> All the hard work behind the app, its features and its code belongs to them. Huge thanks to everyone who built Metrolist! 🙏  
+> YuruTune is rebranded and maintained by **Nimzz**.
+>
+> Original project: [GitHub](https://github.com/MetrolistGroup/Metrolist) · [Website](https://metrolist.cc) · [Discord](https://dsc.gg/metrolist) · [Telegram](https://t.me/metrolistapp)
+
+> [!WARNING]
+> **Regional Restriction** - If YouTube Music is unavailable in your region, this app will not work without a **VPN or proxy** connecting to a supported region.
+
+---
+
+<div align="center">
+
+<h1><a id="screenshots"></a>Screenshots</h1>
+
+<img src="fastlane/metadata/android/en-US/images/screenshots/screenshot_1.png" alt="Home screen" width="30%" />
+<img src="fastlane/metadata/android/en-US/images/screenshots/screenshot_2.png" alt="Artist screen" width="30%" />
+<img src="fastlane/metadata/android/en-US/images/screenshots/screenshot_3.png" alt="Recognize music screen" width="30%" />
+<img src="fastlane/metadata/android/en-US/images/screenshots/screenshot_4.png" alt="Listen together screen" width="30%" />
+<img src="fastlane/metadata/android/en-US/images/screenshots/screenshot_5.png" alt="Player screen" width="30%" />
+<img src="fastlane/metadata/android/en-US/images/screenshots/screenshot_6.png" alt="Player lyrics screen" width="30%" />
+
+</div>
+
+---
+
+<div align="center">
+
+<h1><a id="features"></a>Features</h1>
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+
+#### Playback
+- Stream any song or video from YouTube Music
+- Background playback
+- Download & cache for offline use
+- Skip silence
+- Sleep timer
+
+</td>
+    <td width="50%" valign="top">
+
+#### Audio
+- Audio normalization
+- Tempo & pitch control
+- Equalizer
+- Crossfade
+
+</td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+
+#### Lyrics & Discovery
+- Live synced lyrics
+- AI-powered lyrics translation
+- Personalized quick picks
+- Search songs, albums, artists, videos, and playlists
+
+</td>
+    <td width="50%" valign="top">
+
+#### Library & Account
+- Full library management
+- Local playlists
+- Import playlists
+- Reorder songs in playlist or queue
+- YouTube Music account login
+- Sync songs, artists, albums, and playlists
+
+</td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+
+#### Social
+- Listen together with friends in real-time
+- Last.fm integration for scrobbling
+- Safe Discord Rich Presence
+
+</td>
+    <td width="50%" valign="top">
+
+#### Interface
+- Home screen widget
+- Light / Dark / Black / Dynamic theme modes
+- Dynamic color + 19 preset color palettes
+- Built with Material 3
+
+</td>
+  </tr>
+</table>
+
+</div>
+
+---
+
+<div align="center">
+
+<h1><a id="download-now"></a>Download Now</h1>
+
+<h3>Get the latest YuruTune APK from the <a href="../../releases">Releases</a> page of this repository.</h3>
+
+<details>
+<summary><b>Original Metrolist downloads (upstream project)</b></summary>
+
+<br/>
+
+<h2>Stable Release</h2>
+
+<table>
+  <tr>
+    <th align="center">Obtainium</th>
+    <th align="center">IzzyOnDroid</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/MetrolistGroup/Metrolist/">
+        <img src="assets/badges/obtainium.svg" alt="Add Metrolist to Obtainium" height="100">
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://apt.izzysoft.de/fdroid/index/apk/com.metrolist.music">
+        <img src="assets/badges/izzyondroid.svg" alt="Get Metrolist on IzzyOnDroid" height="100">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <th align="center">OpenAPK</th>
+    <th align="center">GitHub</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://www.openapk.net/metrolist/com.metrolist.music/">
+        <img src="assets/badges/openapk.svg" alt="Get Metrolist on OpenAPK" height="100">
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/MetrolistGroup/Metrolist/releases/latest/download/Metrolist.apk">
+        <img src="assets/badges/github-stable.svg" alt="Get the stable Metrolist release on GitHub" height="100">
+      </a>
+    </td>
+  </tr>
+</table>
+
+<h2>Nightly Build</h2>
+
+<table>
+  <tr>
+    <th align="center">GitHub</th>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/MetrolistGroup/Metrolist/releases/download/nightly/Metrolist-with-Google-Cast.apk">
+        <img src="assets/badges/github-nightly.svg" alt="Get the Metrolist nightly build on GitHub" height="120">
+      </a>
+    </td>
+  </tr>
+</table>
+
+</details>
+
+</div>
+
+---
+
+<div align="center">
+
+<h1><a id="faq"></a>FAQ</h1>
+
+<h3>Got questions? YuruTune works just like Metrolist, so the <a href="https://metrolist.cc/#faq">Metrolist FAQ page</a> answers most of the common ones.</h3>
+
+</div>
+
+---
+
+<div align="center">
+
+<h1><a id="translations"></a>Translations</h1>
+
+[![Translation status](https://img.shields.io/weblate/progress/metrolist?style=for-the-badge&labelColor=0d1117)](https://hosted.weblate.org/engage/metrolist/)
+
+<h3>YuruTune inherits its translations from Metrolist, which uses Weblate. <a href="https://hosted.weblate.org/projects/Metrolist/">Help bring Metrolist to more people!</a></h3>
+
+<a href="https://hosted.weblate.org/projects/Metrolist/">
+  <img src="https://hosted.weblate.org/widget/Metrolist/horizontal-auto.svg" alt="Translation status" />
+</a>
+
+<h3>Thank you! Every translation makes the app a little more accessible to someone, somewhere in the world.</h3>
+
+</div>
+
+---
+
+<div align="center">
+
+<h1><a id="support-the-project"></a>Support the Project</h1>
+
+<h3>YuruTune is free and open-source, and it exists thanks to Metrolist. If it brings you joy, please consider supporting the original developer, Mo Agamy!</h3>
+
+#### Monero (XMR)
+
+<img src="assets/XMR.png" alt="Monero QR code" width="150" />
+
+```text
+44XjSELSWcgJTZiCKzjpCQWyXhokrH9RqH3rpp35FkSKi57T25hniHWHQNhLeXyFn3DDYqufmfRB1iEtENerZpJc7xJCcqt
+```
+
+#### Buy Me a Coffee
+
+<a href="https://www.buymeacoffee.com/mostafaalagamy">
+  <img src="assets/buymeacoffee.png" alt="Buy Me a Coffee" width="150" />
+</a>
+
+</div>
+
+---
+
+<div align="center">
+
+<h1>Special Thanks</h1>
+
+<h3>YuruTune stands on the shoulders of Metrolist and the incredible open-source work behind it.</h3>
+
+<h3>Base Project</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">Project</th>
+      <th align="center">Authors</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://github.com/MetrolistGroup/Metrolist"><strong>Metrolist</strong></a></td>
+      <td align="center"><a href="https://github.com/mostafaalagamy">Mo Agamy</a> · <a href="https://github.com/MetrolistGroup">MetrolistGroup</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Main Inspirations</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">Project</th>
+      <th align="center">Authors</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center"><strong>InnerTune</strong></td>
+      <td align="center"><a href="https://github.com/z-huang">Zion Huang</a> · <a href="https://github.com/Malopieds">Malopieds</a></td>
+    </tr>
+    <tr>
+      <td align="center"><strong>OuterTune</strong></td>
+      <td align="center"><a href="https://github.com/DD3Boh">Davide Garberi</a> · <a href="https://github.com/mikooomich">Michael Zh</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Libraries & Integrations</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th align="center">Project</th>
+      <th align="center">Contribution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center"><a href="https://better-lyrics.boidu.dev"><strong>Better Lyrics</strong></a></td>
+      <td>Time-synced lyrics with word-by-word highlighting & YouTube Music integration</td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://github.com/MetrolistGroup/metroserver"><strong>metroserver</strong></a></td>
+      <td>Listen-together real-time backend</td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://github.com/aleksey-saenko/MusicRecognizer"><strong>MusicRecognizer</strong></a></td>
+      <td>Music recognition feature & Shazam API integration</td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://github.com/ZemerTeam/zemer-cipher"><strong>zemer-cipher</strong></a></td>
+      <td>YouTube cipher deobfuscation and PoToken generation</td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://www.blacksmith.sh"><strong>Blacksmith</strong></a></td>
+      <td>High-performance GitHub Actions runners powering our CI</td>
+    </tr>
+  </tbody>
+</table>
+
+<br/>
+
+<a href="https://www.blacksmith.sh">
+  <img src="assets/blacksmith-powered.png" alt="CI powered by Blacksmith" width="280" />
+</a>
+
+<h3>We also thank the entire open-source community! For every library, tool, and API that powers this project.</h3>
+
+</div>
+
+---
+
+<div align="center">
+
+<h1>Contributors</h1>
+
+<h3>YuruTune wouldn't exist without the amazing people who built Metrolist!</h3>
+
+<a href="https://github.com/MetrolistGroup/Metrolist/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=MetrolistGroup/Metrolist" alt="Metrolist contributors" />
+</a>
+
+</div>
+
+---
+
+<div align="center">
+
+<h1><a id="license"></a>License</h1>
+
+YuruTune is a modified version of [Metrolist](https://github.com/MetrolistGroup/Metrolist) and is distributed under the **[GNU General Public License v3.0](LICENSE)**, the same license as the original project.  
+The original copyright and license notices are preserved. You may use, study, share, and improve this software under the terms of the GPL-3.0.
+
+</div>
+
+---
+
+<div align="center">
+
+<h1>Disclaimer</h1>
+
+This project is **not affiliated with, funded, authorized, endorsed by, or in any way associated** with YouTube, Google LLC, Metrolist Group LLC, or any of their affiliates and subsidiaries.
+
+YuruTune is an independent derivative of Metrolist and is not an official Metrolist release.
+
+All trademarks, service marks, and intellectual property rights referenced in this project belong to their respective owners.
+
+</div>
+
+---
+
+<div align="center">
+
+<br/>
+
+**YuruTune, rebranded by Nimzz**
+
+**Based on Metrolist, made with ❤️ by [Mo Agamy](https://github.com/mostafaalagamy) & [MetrolistGroup](https://github.com/MetrolistGroup)**
+
+**This project stands with Palestine 🇵🇸**
+
+</div>
