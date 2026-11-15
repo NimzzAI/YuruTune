@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="${appLabel}"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Metrolist">
+
+        <activity
+            android:name="com.metrolist.android.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation" />
+
+        <activity-alias
+            android:name=".MainActivityOriginal"
+            android:enabled="true"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="${appLabel}"
+            android:targetActivity="com.metrolist.android.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".MainActivityArcticHaze"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_arctic_haze"
+            android:label="${appLabel}"
+            android:targetActivity="com.metrolist.android.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".MainActivityLavenderLeap"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_lavender_leap"
+            android:label="${appLabel}"
+            android:targetActivity="com.metrolist.android.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".MainActivityMetromallow"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_metromallow"
+            android:label="${appLabel}"
+            android:targetActivity="com.metrolist.android.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".MainActivityPrideSpecial"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_pride_special"
+            android:label="${appLabel}"
+            android:targetActivity="com.metrolist.android.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".MainActivityKayeStatic"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_kaye_static"
+            android:label="${appLabel}"
+            android:targetActivity="com.metrolist.android.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".MainActivityZenithBlack"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_zenith_black"
+            android:label="${appLabel}"
+            android:targetActivity="com.metrolist.android.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".MainActivityZenithWhite"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_zenith_white"
+            android:label="${appLabel}"
+            android:targetActivity="com.metrolist.android.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".MainActivityGradient"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher_gradient"
+            android:label="${appLabel}"
+            android:targetActivity="com.metrolist.android.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+    </application>
+</manifest>

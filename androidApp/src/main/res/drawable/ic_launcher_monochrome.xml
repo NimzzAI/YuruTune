@@ -1,17 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:height="108dp"
     android:width="108dp"
-    android:viewportWidth="30.0"
-    android:viewportHeight="32.0">
+    android:height="108dp"
+    android:viewportWidth="1000"
+    android:viewportHeight="1000">
     <group
-        android:scaleX="0.47"
-        android:scaleY="0.5"
-        android:translateX="7.8"
-        android:translateY="8.0">
+        android:scaleX="0.62"
+        android:scaleY="0.62"
+        android:translateX="190"
+        android:translateY="190">
         <path
             android:fillColor="#00000000"
-            android:pathData="M9.5,15.5L3.707,21.293C3.317,21.684 3.317,22.317 3.707,22.707L9.293,28.293C9.683,28.684 10.317,28.684 10.707,28.293L16.707,22.293C16.895,22.105 17,21.851 17,21.586V4.468C17,3.578 18.074,3.132 18.705,3.759L28,13"
+            android:pathData="M235,485 C235,310 350,210 500,210 C650,210 765,310 765,485"
             android:strokeColor="#FF000000"
-            android:strokeWidth="5.0" />
+            android:strokeLineCap="round"
+            android:strokeWidth="58" />
+        <path
+            android:fillColor="#FF000000"
+            android:fillType="evenOdd"
+            android:pathData="M250,438 C292,438 318,466 318,522 L318,622 C318,678 292,708 250,708 C192,708 152,658 152,573 C152,488 192,438 250,438 Z M265,482 L265,664 C279,664 287,648 287,618 L287,528 C287,498 279,482 265,482 Z" />
+        <path
+            android:fillColor="#FF000000"
+            android:fillType="evenOdd"
+            android:pathData="M750,438 C808,438 848,488 848,573 C848,658 808,708 750,708 C708,708 682,678 682,622 L682,522 C682,466 708,438 750,438 Z M735,482 C721,482 713,498 713,528 L713,618 C713,648 721,664 735,664 L735,482 Z" />
+        <path
+            android:fillColor="#FF000000"
+            android:pathData="M472,424 C472,406 496,402 508,418 C528,448 564,468 594,496 C622,522 628,568 604,604 C596,615 582,608 586,594 C594,562 578,526 512,494 L518,690 C518,754 468,804 408,804 C368,804 342,776 342,742 C342,698 386,664 442,664 C458,664 470,668 478,672 L472,424 Z" />
     </group>
 </vector>
