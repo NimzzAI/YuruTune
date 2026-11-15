@@ -1,0 +1,75 @@
+name: Build YuruTune APK
+
+# Run it by hand: Actions tab > Build YuruTune APK > Run workflow.
+# No keystore and no secrets needed: the APK is signed with the standard debug key.
+on:
+  workflow_dispatch:
+
+env:
+  # Metrolist release this source is based on. Used to fetch the two submodules
+  # (metroproto and libopus), which are not included in a ZIP upload.
+  UPSTREAM_REF: v14.0.0
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build APK
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+
+      - name: Fetch submodules
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          fetch() {
+            dir="$1"; repo="$2"
+            if [ -n "$(ls -A "$dir" 2>/dev/null)" ]; then
+              echo "$dir is already present"
+              return
+            fi
+            sha=$(gh api "repos/MetrolistGroup/Metrolist/contents/${dir}?ref=${UPSTREAM_REF}" --jq .sha)
+            echo "$dir -> $repo @ $sha"
+            mkdir -p "$dir"
+            git -C "$dir" init -q
+            git -C "$dir" remote add origin "https://github.com/${repo}.git"
+            git -C "$dir" fetch --depth 1 -q origin "$sha"
+            git -C "$dir" checkout -q FETCH_HEAD
+          }
+          fetch metroproto MetrolistGroup/metroproto
+          fetch opusDecoder/src/main/jni/libopus xiph/opus
+
+      - name: Prepare CI Gradle
+        uses: ./.github/actions/prepare-ci-gradle
+        with:
+          cache-scope: yurutune-android-debug
+          persist-configuration-cache: 'false'
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@be39fa834029ff78f1a44aa3bb0819b8fc2bd8fd # v4
+        with:
+          packages: platform-tools
+
+      - name: Build APK
+        run: ./gradlew :androidApp:assembleDebug --no-daemon -Pmetrolist.sourceRevision=
+
+      - name: Name the APK
+        run: |
+          mkdir -p dist
+          cp "$(ls androidApp/build/outputs/apk/debug/*.apk | head -n 1)" dist/YuruTune.apk
+
+      - name: Upload APK
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: YuruTune-APK
+          path: dist/YuruTune.apk
+          if-no-files-found: error
+          retention-days: 14
